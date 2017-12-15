@@ -12,6 +12,7 @@ namespace EntityFrameWorkCodeAlong.Models
         public int MovieId { get; set; }
         public int FormatId { get; set; }
         public int AmountInStock { get; set; }
+        [Column(TypeName="datetime2")]
         public DateTime ReleaseDate{ get; set; }
 
         [ForeignKey("MovieId")]

@@ -9,7 +9,14 @@ namespace EntityFrameWorkCodeAlong.Models
     public class Order
     {
         public int Id { get; set; }
-        public int CustomerId { get; set; }                                                //foreign key    
+        public int CustomerId { get; set; }
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int OrderNr { get; set; }
+        [Column(TypeName = "datetime2")]
+        public DateTime Orderdate { get; set; } 
+        public DateTime Shippingdate { get { return Orderdate.AddDays(5); } }                         //those are not part of database thats y we are giving datatime and its part of class
+        public bool HasBeenSent { get; set; }
+                                                                                                                       //foreign key    
 
 
         [ForeignKey("CustomerId")]
