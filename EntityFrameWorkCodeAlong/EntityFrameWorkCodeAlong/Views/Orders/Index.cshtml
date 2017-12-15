@@ -1,0 +1,69 @@
+﻿@model IEnumerable<EntityFrameWorkCodeAlong.Models.ViewModels.OrderIndex>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MovieTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FormatName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderNr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShippingDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HasBeenSent)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MovieTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FormatName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderNr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShippingDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HasBeenSent)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.OrderNr }) |
+            @Html.ActionLink("Details", "Details", new { id = item.OrderNr }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.OrderNr })
+        </td>
+    </tr>
+}
+
+</table>
