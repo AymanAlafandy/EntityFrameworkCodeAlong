@@ -20,5 +20,5 @@ namespace EntityFrameWorkCodeAlong.Models
         [ForeignKey("FormatId")]
         public virtual Format Format { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
-    }
+    }                                                                           
 }
