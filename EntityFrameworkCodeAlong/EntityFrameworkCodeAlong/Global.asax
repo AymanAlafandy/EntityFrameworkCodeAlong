@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="EntityFrameworkCodeAlong.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="EntityFrameWorkCodeAlong.MvcApplication" Language="C#" %>
