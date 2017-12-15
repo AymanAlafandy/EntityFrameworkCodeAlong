@@ -286,3 +286,9 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/EntityFrameWorkCodeAlong/EntityFrameWorkCodeAlong/Migrations/201712151013268_Init.cs
+/EntityFrameWorkCodeAlong/EntityFrameWorkCodeAlong/Migrations/201712151013268_Init.Designer.cs
+/EntityFrameWorkCodeAlong/EntityFrameWorkCodeAlong/Migrations/201712151031034_Init2.cs
+/EntityFrameWorkCodeAlong/EntityFrameWorkCodeAlong/Migrations/201712151013268_Init.resx
+/EntityFrameWorkCodeAlong/EntityFrameWorkCodeAlong/Migrations/201712151031034_Init2.Designer.cs
+/EntityFrameWorkCodeAlong/EntityFrameWorkCodeAlong/Migrations/201712151031034_Init2.resx
