@@ -29,6 +29,7 @@ namespace EntityFrameWorkCodeAlong.Migrations
             DropTable("dbo.MovieFormatStockOrders");
         }
         
+
         public override void Down()
         {
             CreateTable(
