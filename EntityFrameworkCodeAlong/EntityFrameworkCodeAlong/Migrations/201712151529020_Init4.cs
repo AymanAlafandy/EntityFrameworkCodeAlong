@@ -30,6 +30,7 @@ namespace EntityFrameWorkCodeAlong.Migrations
         }
         
 
+
         public override void Down()
         {
             CreateTable(
